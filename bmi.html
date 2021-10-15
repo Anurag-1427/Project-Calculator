@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <a href="home.html"><img src="images/calculator-interface-symbol.png" alt="logo" id="img-logo"></a>
+                </div>
+                <div class="text-logo">
+                    Calculator
+                </div>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="simple.html">Simple</a></li>
+                    <li><a href="scientific.html">Scientific</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                </ul>
+            </div>
+            <div class="n-buttons">
+                <div class="darkite-mode">
+                    <a href="#"><img src="images/dark-mode.png" alt="darkite-mode" id="darkite-mode"></a>
+                </div>
+                <div class="nav-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Toggle Menu -->
+    <div class="toggle-menu">
+        <div class="toggle-links">
+            <ul>
+                <li><a href="home.html">Home</a></li><br>
+                <li><a href="simple.html">Simple</a></li><br>
+                <li><a href="scientific.html">Scientific</a></li><br>
+                <li><a href="bmi.html">BMI</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- BMI Calculator -->
+    <div class="bmi-calci-container">
+        <div class="heading">BMI Calculator</div>
+
+        <div class="calci">
+            <h2 style="color: black;">Calculate your BMI</h2>
+            <p class="text" style="color: black;">Height</p>
+            <input type="text" id="h">
+            <p class="text" style="color: black;">Weight</p>
+            <input type="text" id="w">
+            <p id="result"></p>
+            <button id="btn" onclick="BMI()">Calculate</button>
+            <p id="info">Please enter height [cm] and weight [kg]  </p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="left">
+                <div class="left-content">
+                    <p>Copyright &copy; 2021 Calculator</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-ka-left">
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="simple.html">Simple</a></li>
+                            <li><a href="scientific.html">Scientific</a></li>
+                            <li><a href="bmi.html">BMI</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-ka-right">
+                    <div class="footer-contacts">
+                        <ul>
+                            <li>Contact: xxxxxxxx</li>
+                            <li>Email: yourmail@mail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="bmi.js"></script>
+</body>
+</html>
